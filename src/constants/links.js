@@ -17,13 +17,15 @@ const data = [
         text: 'projects',
         url: '/projects/',
     },
+    /*
     {
         id: 5,
         text: 'blog',
         url: '/blog/',
     },
+    */
     {
-        id: 5,
+        id: 4,
         text: 'contact',
         url: '/contact/',
     },
