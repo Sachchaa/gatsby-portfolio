@@ -1,22 +1,53 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
+
 
 import '../css/main.css';
 
 import Hero from '../components/hero';
 import Services from '../components/services';
 import Jobs from '../components/jobs';
+import Projects from '../components/projects';
 
 import Layout from '../components/layout'
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <Hero />
-    <Services />
-    <Jobs />
-  </Layout>
-)
+const IndexPage = ({ data }) => {
+  const { allStrapiProjects: { nodes: projects } } = data
+
+  return (
+    <Layout>
+      <Hero />
+      <Services />
+      <Jobs />
+      <Projects projects={projects} title='featured projects' showLink />
+    </Layout >
+  )
+}
+
+export const query = graphql`
+  {
+    allStrapiProjects(filter: {featured: {eq: true}}) {
+      nodes {
+        id
+        title
+        description
+        github
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        stack {
+          id
+          title
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
