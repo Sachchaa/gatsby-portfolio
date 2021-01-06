@@ -1,27 +1,34 @@
 import React from 'react';
-import { FaLinkedin, FaInstagram, FaGithub, FaFacebookSquare } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaGithub, FaFacebookSquare, FaMedium } from 'react-icons/fa';
 
 const data = [
     {
         id: 1,
-        icon: <FaLinkedin styleClass='social-icon'></FaLinkedin>,
+        icon: <FaLinkedin className='social-icon'></FaLinkedin>,
         url: 'https://www.linkedin.com/in/sachinkanishka/',
     },
     {
         id: 2,
-        icon: <FaGithub styleClass='social-icon'></FaGithub>,
+        icon: <FaGithub className='social-icon'></FaGithub>,
         url: 'https://github.com/Sachchaa',
     },
     {
         id: 3,
-        icon: <FaInstagram styleClass='social-icon'></FaInstagram>,
+        icon: <FaInstagram className='social-icon'></FaInstagram>,
         url: 'https://www.instagram.com/sachin_kanishka/',
     },
     {
         id: 4,
-        icon: <FaFacebookSquare styleClass='social-icon'></FaFacebookSquare>,
+        icon: <FaFacebookSquare className='social-icon'></FaFacebookSquare>,
         url: 'https://www.facebook.com/sachin.kanishka/',
     },
+    {
+        id: 5,
+        icon: <FaMedium className='social-icon'></FaMedium>,
+        url: 'https://medium.com/@sachinkanishka/',
+    },
+
+
 
 ]
 

@@ -8,7 +8,9 @@ const Footer = () => {
             <div>
                 <SocialLinks styleClass='footer-links' />
                 <h4>
-                    <span> CODESUTRA </span> &copy; {new Date().getFullYear()} &nbsp; all rights reserved
+                    Copyright &copy; {new Date().getFullYear()}
+                    <span> codesutra </span>
+                      all rights reserved
                 </h4>
             </div>
         </footer>

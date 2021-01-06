@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby Portfolio`,
+    description: `This is Sachin portfolio.`,
+    author: `@sachink`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -34,12 +34,27 @@ module.exports = {
         queryLimit: 1000, // Default to 100
         contentTypes: [`jobs`, `projects`],
         //If using single types place them in this array.
-        //singleTypes: [`home-page`, `contact`],
+        singleTypes: [`about`],
         // Possibility to login with a strapi user, when content types are not publically available (optional).
         //loginData: {
         // identifier: "",
         //  password: "",
         //},
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto`,
+            variants: [`400`, `700`]
+          },
+          {
+            family: `Open Sans`,
+
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
