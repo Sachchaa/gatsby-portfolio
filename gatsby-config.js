@@ -51,8 +51,8 @@ module.exports = {
             variants: [`400`, `700`]
           },
           {
-            family: `Open Sans`,
-
+            family: `Ubuntu`,
+            variants: [`400`]
           },
         ],
       },
