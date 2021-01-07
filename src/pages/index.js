@@ -13,6 +13,7 @@ import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => {
   const { allStrapiProjects: { nodes: projects } } = data
+  const module = typeof window !== `undefined` ? require("module") : null
 
   return (
     <Layout>
