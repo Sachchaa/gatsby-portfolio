@@ -30,11 +30,8 @@ const Hero = () => {
                     <article className='hero-info'>
                         <div>
                             <h1>i'm sachin</h1>
-                            <h4>React | GatsbyJS | AWS</h4>
+                            <h4>{'< I WRITE CODE />'}</h4>
                             <SocialLinks target="_blank" />
-                            <Link to='/contact' className='btn'>
-                                contact me
-                            </Link>
                         </div>
                     </article>
                     <Image fluid={fluid} className='hero-img img-fluid' />

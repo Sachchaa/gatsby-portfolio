@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-
 body {
-  font-family: 'Roboto', sans-serif ;
+  font-family: 'Ubuntu', sans-serif ;
   background: white;
   color: hsl(209, 61%, 16%);
   line-height: 1.5;
@@ -28,7 +26,7 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 h1 {
   font-size: 3rem;
@@ -869,6 +867,52 @@ Projects
 }
 
 /*
+  contact component
+*/
+
+.contact-component {
+  display: grid;
+  place-items: center;
+  padding: 5rem 0;
+  background-color: white;
+}
+.contact-component-form {
+  background:hsl(210, 36%, 96%);
+  border-radius: 0.25rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  width: 90vw;
+  max-width: 35rem;
+}
+.contact-component-form:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.contact-component-form h3 {
+  padding-top: 1.5rem;
+}
+.form-component-group {
+  padding: 1rem 1.5rem;
+}
+.form-component-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  background:  white;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.form-component-control::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: hsl(209, 61%, 16%);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+/*
   contact page
 */
 
@@ -878,7 +922,7 @@ Projects
   padding: 5rem 0;
 }
 .contact-form {
-  background: white;
+  background:white;
   border-radius: 0.25rem;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -902,7 +946,7 @@ Projects
   padding: 0.75rem 1rem;
   border: none;
   margin-bottom: 1.25rem;
-  background: hsl(210, 36%, 96%);
+  background:  hsl(210, 36%, 96%);
   border-radius: 0.25rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -921,4 +965,23 @@ Projects
   border-bottom-right-radius: 0.25rem;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+}
+
+/*
+  scroll component
+*/
+
+.to-top {
+  z-index: 2;
+  position: fixed;
+  bottom: 2vh;
+  background-color: black;
+  color: #00BCD4;
+  right: 5%;
+}
+
+.to-top:hover {
+  transition: 0.3s;
+  color: blue;
+  background-color: chartreuse;
 }

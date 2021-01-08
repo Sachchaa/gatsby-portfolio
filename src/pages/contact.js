@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import ContactMe from '../components/contact'
 
 const Contact = () => {
     return (
@@ -17,10 +18,8 @@ const Contact = () => {
                             submit here
                         </button>
                     </form>
-
                 </article>
             </section>
-
         </Layout>
     )
 }

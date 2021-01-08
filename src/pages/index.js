@@ -9,18 +9,21 @@ import Services from '../components/services';
 import Jobs from '../components/jobs';
 import Projects from '../components/projects';
 import Layout from '../components/layout'
+import ContactMe from '../components/contact'
+import Scroll from '../components/scroll'
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => {
   const { allStrapiProjects: { nodes: projects } } = data
-  const module = typeof window !== `undefined` ? require("module") : null
 
   return (
     <Layout>
+      <Scroll showBelow={250} />
       <Hero />
       <Services />
       <Jobs />
       <Projects projects={projects} title='featured projects' showLink />
+      <ContactMe />
     </Layout >
   )
 }
