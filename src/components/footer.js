@@ -1,4 +1,3 @@
-import { format } from 'prettier';
 import React from 'react'
 import SocialLinks from '../constants/socialLinks'
 
@@ -8,9 +7,9 @@ const Footer = () => {
             <div>
                 <SocialLinks styleClass='footer-links' />
                 <h4>
-                    Copyright &copy; {new Date().getFullYear()}
-                    <span> codesutra </span>
-                      all rights reserved
+                    &copy; {new Date().getFullYear()}
+                    <span> DevelopedbySachin  </span>
+                     - all rights reserved
                 </h4>
             </div>
         </footer>

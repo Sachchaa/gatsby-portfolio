@@ -21,7 +21,8 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   letter-spacing: 0.2rem;
   text-transform: capitalize;
   line-height: 1.25;
@@ -39,6 +40,9 @@ h3 {
 }
 h4 {
   font-size: 0.875rem;
+}
+h5 {
+  font-size: 0.675rem;
 }
 p {
   margin-bottom: 1.25rem;
@@ -58,13 +62,17 @@ p {
   h4 {
     font-size: 1rem;
   }
+  h5 {
+    font-size: 0.675rem;
+  }
   body {
     font-size: 1rem;
   }
   h1,
   h2,
   h3,
-  h4 {
+  h4,
+  h5 {
     line-height: 1;
   }
 }
@@ -86,6 +94,7 @@ p {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;
   font-family: 'Ubuntu', sans-serif ;
+  text-decoration: none;
 }
 .button:hover {
   color: hsl(184, 91%, 17%);
@@ -147,7 +156,8 @@ p {
   height: 5rem;
   display: flex;
   align-items: center;
-  z-index: 200;
+  justify-content: center;
+  z-index: 100;
   background: white;
 }
 .nav-center {
@@ -175,6 +185,7 @@ p {
 }
 .nav-links {
   display: none;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .toggle-btn {
@@ -183,6 +194,7 @@ p {
   .nav-links {
     display: flex;
     justify-content: flex-end;
+    text-decoration: none;
   }
   .nav-links li {
     margin-right: 2rem;
@@ -194,6 +206,7 @@ p {
     letter-spacing: 0.2rem;
     transition: all 0.3s linear;
     padding: 0.5rem 0;
+    text-decoration: none;
   }
   .nav-links a:hover {
     color: hsl(182, 88%, 44%);
@@ -357,6 +370,7 @@ p {
   justify-content: space-around;
   padding: 0%;
   margin: auto auto 0 0;
+  align-items: flex-end;
 }
 .social-link {
   font-size: 1.75rem;
@@ -553,6 +567,7 @@ Projects
 .project-desc {
   word-spacing: 2px;
   color: hsl(209, 34%, 30%);
+  text-align: left;
 }
 .project-stack {
   margin-bottom: 1rem;
@@ -569,7 +584,8 @@ Projects
   letter-spacing: 2px;
   font-size: 0.85rem;
 }
-.about-stack span {
+.about-stack span,
+.project-stack span{
   margin-top: 0.5rem;
 }
 .project-icon {
@@ -607,7 +623,6 @@ Projects
   .project-info {
     border-radius: 0.25rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);;
-
     z-index: 1;
     grid-column: 5 /12;
     grid-row: 1 / 1;
@@ -688,6 +703,7 @@ Projects
   font-size: 2rem;
   transition: all 0.3s linear;
   border-radius: 0.25rem;
+  text-decoration: none;
 }
 .sidebar-links li a:hover {
   background: hsl(185, 94%, 87%);
@@ -819,24 +835,6 @@ Projects
 .about-text p {
   line-height: 2;
 }
-.stack-container {
-  width: 30rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 0.5rem;
-}
-.stack-container span {
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  letter-spacing: 1px;
-  color: hsl(209, 28%, 39%);
-}
-.stack-icon {
-  color: #2caeba;
-  margin-right: 0.25rem;
-  font-size: 1rem;
-}
 
 @media screen and (min-width: 768px) {
   .about-center {
@@ -967,23 +965,4 @@ Projects
   border-bottom-right-radius: 0.25rem;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-}
-
-/*
-  scroll component
-*/
-
-.to-top {
-  z-index: 2;
-  position: fixed;
-  bottom: 2vh;
-  background-color: black;
-  color:hsl(182, 88%, 44%);
-  right: 5%;
-}
-
-.to-top:hover {
-  transition: 0.3s;
-  color: blue;
-  background-color: chartreuse;
 }
