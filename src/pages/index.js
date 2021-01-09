@@ -10,7 +10,6 @@ import Jobs from '../components/jobs';
 import Projects from '../components/projects';
 import Layout from '../components/layout'
 import ContactMe from '../components/contact'
-import Scroll from '../components/scroll'
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => {
@@ -18,7 +17,6 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <Scroll showBelow={250} />
       <Hero />
       <Services />
       <Jobs />

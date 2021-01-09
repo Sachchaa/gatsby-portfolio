@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './navbar'
 import Footer from './footer'
 import Sidebar from './sidebar'
+import Scroll from './scroll'
 
 const Layout = ({ children }) => {
 
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
     <>
       <Navbar toggleSidebar={toggleSidebar} />
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      <Scroll showBelow={250} />
       {children}
       <Footer />
     </>
