@@ -10,13 +10,14 @@ import Jobs from '../components/jobs';
 import Projects from '../components/projects';
 import Layout from '../components/layout'
 import ContactMe from '../components/contact'
-import SEO from "../components/seo"
+import SEO from '../components/seo'
 
 const IndexPage = ({ data }) => {
   const { allStrapiProjects: { nodes: projects } } = data
 
   return (
     <Layout>
+      <SEO title="Home" description="home page" />
       <Hero />
       <Services />
       <Jobs />

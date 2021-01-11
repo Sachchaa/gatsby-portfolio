@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton'
 import { FaArrowCircleUp } from 'react-icons/fa'
-import zIndex from '@material-ui/core/styles/zIndex';
 
 const useStyle = makeStyles((theme) => ({
     toTop: {

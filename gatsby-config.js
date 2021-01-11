@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Portfolio`,
     description: `This is Sachin portfolio.`,
-    author: `@sachink`,
+    author: `@developedbysachin`,
+    siteUrl: `https://gatsby-portfolio-testing-new.netlify.app`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,6 +15,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
