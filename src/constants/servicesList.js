@@ -23,7 +23,7 @@ export default [
         id: 3,
         icon: <FaMobileAlt className='service-icon' />,
         title: 'mobile application development',
-        text: 'I am able to develop mobile applications using Java, Android for Android apps, Swift for iOS apps and Flutter or Xamarin forms for the cross-platform apps.',
+        text: 'I am able to develop mobile applications using Java + Android for Android apps, Swift for iOS apps and Flutter or Xamarin for the cross-platform apps.',
     },
 
 ]

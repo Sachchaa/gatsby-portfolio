@@ -14,6 +14,7 @@ body {
 }
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 a {
   text-decoration: none;
@@ -21,8 +22,7 @@ a {
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
   letter-spacing: 0.2rem;
   text-transform: capitalize;
   line-height: 1.25;
@@ -156,8 +156,7 @@ p {
   height: 5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  z-index: 100;
+  z-index: 200;
   background: white;
 }
 .nav-center {
@@ -233,29 +232,35 @@ p {
   background: hsl(186, 100%, 94%);
   position: relative;
 }
-
 .hero-center {
   height: 100%;
   display: grid;
   align-items: center;
 }
-
 .hero .underline {
   margin-bottom: 0.5rem;
   margin-left: 0;
 }
 .hero-info {
   background: hsl(186, 100%, 94%);
+  align-self: flex-start;
+  text-align: center;
   justify-self: center;
   grid-row: 2/2;
   grid-column: 6/-1;
+  width: 250px;
 }
 .hero-img {
   display: block;
   grid-row: 1/1;
   grid-column: 6/-1;
   min-width: 225px;
-  justify-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.hero-social{
+  display: flex;
+  justify-content: center;
 }
 .hero-info h1 {
   font-size: 1.5rem;
@@ -286,12 +291,14 @@ p {
     grid-row: 1/1;
     grid-column: 1 / span 7;
     size: 1rem;
+    align-self:center;
   }
   .hero-img {
     display: block;
     grid-row: 1/1;
     grid-column: 7/-1;
     min-width: 200px;
+    align-self: center;
   }
 }
 
@@ -369,8 +376,7 @@ p {
   display: flex;
   justify-content: space-around;
   padding: 0%;
-  margin: auto auto 0 0;
-  align-items: flex-end;
+  margin: auto 0 0 0;
 }
 .social-link {
   font-size: 1.75rem;
@@ -663,6 +669,7 @@ Projects
 }
 .footer .social-link {
   color: white;
+  transition: all 0.3s linear;
 }
 .footer .social-link:hover {
   color: #2caeba;
@@ -682,6 +689,7 @@ Projects
   z-index: 999;
   display: grid;
   place-items: center;
+  justify-content: center;
   opacity: 0;
   transition: all 0.3s linear;
   transform: translateX(-100%);
@@ -699,7 +707,7 @@ Projects
   text-transform: capitalize;
   color: hsl(210, 22%, 49%);
   letter-spacing: 0.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   font-size: 2rem;
   transition: all 0.3s linear;
   border-radius: 0.25rem;
@@ -756,6 +764,9 @@ Projects
     transform: translateX(0);
     opacity: 1;
   }
+}
+.sidebar-icons {
+  align-content: center;
 }
 .sidebar-icons li {
   opacity: 0;
