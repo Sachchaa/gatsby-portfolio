@@ -2,19 +2,21 @@ import React from 'react'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import Projects from '../components/projects'
+import SEO from '../components/seo'
 
 const ProjectsPage = ({
-    data: {
-        allStrapiProjects: { nodes: projects }
-    }
+  data: {
+    allStrapiProjects: { nodes: projects }
+  }
 }) => {
-    return (
-        <Layout>
-            <section>
-                <Projects projects={projects} title='all projects' />
-            </section>
-        </Layout>
-    );
+  return (
+    <Layout>
+      <SEO title='Projects' description='Projects done by me' />
+      <section>
+        <Projects projects={projects} title='all projects' />
+      </section>
+    </Layout>
+  );
 }
 
 export const query = graphql`

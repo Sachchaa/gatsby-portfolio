@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Portfolio`,
+    title: `Sachin Kanishka`,
     description: `This is Sachin portfolio.`,
     author: `@developedbysachin`,
-    siteUrl: `https://gatsby-portfolio-testing-new.netlify.app`
+    siteUrl: `https://gatsby-portfolio-testing-new.netlify.app`,
+    image: `src/images/hero-img.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,7 +27,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/hero-img.png`, // This path is relative to the root of the site.
       },
     },
     {
