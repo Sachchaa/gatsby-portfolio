@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 
 import '../css/main.css';
@@ -35,6 +34,7 @@ export const query = graphql`
         title
         description
         github
+        url
         image {
           childImageSharp {
             fluid {

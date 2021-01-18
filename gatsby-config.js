@@ -3,7 +3,7 @@ module.exports = {
     title: `Sachin Kanishka`,
     description: `This is Sachin portfolio.`,
     author: `@developedbysachin`,
-    siteUrl: `https://gatsby-portfolio-testing-new.netlify.app`,
+    siteUrl: `https://sachinkanishka.dev`,
     image: `src/images/hero-img.png`,
   },
   plugins: [
