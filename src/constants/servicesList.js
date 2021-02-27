@@ -11,19 +11,13 @@ export default [
         id: 1,
         icon: <FaCode className='service-icon' />,
         title: 'web development',
-        text: 'I am able to develop websites using HTML, CSS, JavaScript or using GatsbyJS.',
+        text: 'I design and build high quality responsive static and eCommerce websites using the latest technologies.',
     },
     {
         id: 2,
         icon: <FaLaptopCode className='service-icon' />,
         title: 'web application development',
-        text: 'I am able to develop web applications using React and NodeJS.',
-    },
-    {
-        id: 3,
-        icon: <FaMobileAlt className='service-icon' />,
-        title: 'mobile application development',
-        text: 'I am able to develop mobile applications using Java + Android for Android apps, Swift for iOS apps and Flutter or Xamarin for the cross-platform apps.',
-    },
+        text: 'I design and build high quality web applications using the latest technologies.',
+    }
 
 ]

@@ -41,7 +41,6 @@ const Hero = () => {
                                             'WRITE CODE', 1000,
                                             'DEVELOP WEBSITES', 1000,
                                             'DEVELOP WEB APPS', 1000,
-                                            'DEVELOP MOBILE APPS', 1000,
                                         ]}
                                     />
                                 </span>

@@ -133,7 +133,7 @@ p {
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
-  background: hsl(182, 88%, 44%);
+  background: #0dccd3;
   margin-left: auto;
   margin-right: auto;
 }
@@ -597,7 +597,7 @@ p {
 }
 @media screen and (min-width: 992px) {
   .services-center {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -749,7 +749,7 @@ p {
 .about-stack span {
   display: inline-block;
   background:  hsl(212, 33%, 89%);
-  color: hsl(210, 22%, 49%);
+  color: #617d98;
   margin-right: 0.5rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
@@ -768,7 +768,7 @@ p {
   transition: all 0.3s linear;
 }
 .project-icon:hover {
-  color:  hsl(184, 91%, 17%);
+  color:  #354041;
 }
 @media screen and (min-width: 576px) {
   .project-img {
